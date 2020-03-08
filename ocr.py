@@ -27,12 +27,18 @@ if args["preprocess"] == "thresh":
 elif args["preprocess"] == "blur":
 	gray = cv2.medianBlur(gray, 3)
 
+# gray = cv2.fastNlMeansDenoising(gray, None, 20)
+# cv2.imshow("Denoised", gray)
+
 filename = "{}.png".format(os.getpid())
 cv2.imwrite(filename, gray)
 
 text = pytesseract.image_to_string(Image.open(filename))
+splitted = text.split("\n")
 os.remove(filename)
-print(text)
+# print(text)
+for j in splitted:
+	print(j)
 
 cv2.imshow("Output", gray)
 cv2.waitKey(0)
