@@ -1,7 +1,1 @@
-<html>
-<head><title>502 Bad Gateway</title></head>
-<body>
-<center><h1>502 Bad Gateway</h1></center>
-<hr><center>nginx/1.16.1</center>
-</body>
-</html>
+{"message":"Please change your plan at nanonets.com/user/profile or contact us at info@nanonets.com","code":402,"errors":[{"reason":"You have exceeded your quota of free queries","message":"Please change your plan at nanonets.com/user/profile or contact us at info@nanonets.com"}]}
